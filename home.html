@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Minecraft Homies</title>
+  <!-- Link to Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Optional: Add some custom styling for the navbar -->
+ <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <div class="container">
+      <!-- Logo (left side) -->
+      <a class="navbar-brand" href="#">Minecraft Homies</a>
+
+      <!-- Navbar toggle button (visible on mobile/tablet) -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Navbar links (middle section) -->
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About Us</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Our Services
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">Service 1</a></li>
+              <li><a class="dropdown-item" href="#">Service 2</a></li>
+              <li><a class="dropdown-item" href="#">Service 3</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Our Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact Us</a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Get Started Button (right side) -->
+      <div class="d-none d-lg-block">
+        <a class="btn btn-warning text-white" href="#">Get Started</a>
+      </div>
+    </div>
+  </nav>
+  <div id="heroCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+    <div class="carousel-inner">
+
+      <!-- Slide 1 -->
+      <div class="carousel-item active" style="background-image: url('imeges/images4.jpg');">
+        <div class="carousel-caption">
+          <h1>Welecome To Our MineCraft Community</h1>
+          <p>Minecraft Is Unlimited Over World Game.</p>
+          <p>Minecraft Is very Fun Game.</p>
+          <a href="#" class="btn btn-primary">Read More</a>
+        </div>
+      </div>
+
+      <!-- Slide 2 -->
+      <div class="carousel-item" style="background-image: url('imeges/images2.jpg');">
+        <div class="carousel-caption">
+          <h1>Explore Our Services</h1>
+          <p>Buy Minecraft And Play Multiplayer.</p>
+          <p></p>
+          <a href="#" class="btn btn-primary">Read More</a>
+        </div>
+      </div>
+
+      <!-- Slide 3 -->
+      <div class="carousel-item" style="background-image: url('imeges/images1.jpg');">
+        <div class="carousel-caption">
+          <h1>Join Our Community</h1>
+          <p>Play Minecraft With Friends.</p>
+          <p>Join Our Community to notify.</p>
+          <a href="#" class="btn btn-primary">Read More</a>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Carousel controls -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+
+    <!-- Carousel indicators -->
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+  </div>
+  <div class="about-section">
+    <div class="left-panel">
+        <h2>About Us</h2>
+        <div class="tabs">
+            <div class="tab active" onclick="showTab('company')">Our Company</div>
+            <div class="tab" onclick="showTab('mission')">Our Mission</div>
+            <div class="tab" onclick="showTab('vision')">Our Vision</div>
+        </div>
+        <div class="content">
+            <div id="company" class="tab-content">
+                <h3>Our Company</h3>
+                <p>We are a leading firm committed to delivering exceptional services and innovative solutions to our clients worldwide.</p>
+                <button>Learn More</button>
+            </div>
+            <div id="mission" class="tab-content" style="display: none;">
+                <h3>Our Mission</h3>
+                <p>Our mission is to empower businesses and individuals with cutting-edge tools and services to achieve their goals.</p>
+                <button>Learn More</button>
+            </div>
+            <div id="vision" class="tab-content" style="display: none;">
+                <h3>Our Vision</h3>
+                <p>We envision a world where technology bridges gaps and creates opportunities for everyone.</p>
+                <button>Learn More</button>
+            </div>
+        </div>
+    </div>
+    <div class="right-panel">
+        <img id="tab-image" src="imeges/images5.jpg" alt="Our Company">
+    </div>
+</div>
+<div class="about-section">
+  <div class="left-panel">
+      <h2>About Us</h2>
+      <div class="tabs">
+          <div class="tab active" onclick="showTab('company')">Our Company</div>
+          <div class="tab" onclick="showTab('mission')">Our Mission</div>
+          <div class="tab" onclick="showTab('vision')">Our Vision</div>
+      </div>
+      <div class="content">
+          <div id="company" class="tab-content">
+              <h3>Our Company</h3>
+              <p>We are a leading firm committed to delivering exceptional services and innovative solutions to our clients worldwide.</p>
+              <button>Learn More</button>
+          </div>
+          <div id="mission" class="tab-content" style="display: none;">
+              <h3>Our Mission</h3>
+              <p>Our mission is to empower businesses and individuals with cutting-edge tools and services to achieve their goals.</p>
+              <button>Learn More</button>
+          </div>
+          <div id="vision" class="tab-content" style="display: none;">
+              <h3>Our Vision</h3>
+              <p>We envision a world where technology bridges gaps and creates opportunities for everyone.</p>
+              <button>Learn More</button>
+          </div>
+      </div>
+  </div>
+  <div class="right-panel">
+      <img id="tab-image" src="imeges/images4.jpg" alt="Our Company">
+  </div>
+</div>
+
+<div class="services-section text-center">
+  <h2>Our Services</h2>
+  <p>Explore our wide range of services designed to meet the unique needs of our clients and deliver exceptional results.</p>
+  <div class="container mt-4">
+      <div class="row g-4">
+          <div class="col-md-4">
+              <div class="service-box">
+                  <i class="bi bi-gear"></i>
+                  <h4>Service 1</h4>
+                  <p> We are here to connect people,so they can play mc with other people.</p>
+                  <button>Read More</button>
+              </div>
+          </div>
+          <div class="col-md-4">
+              <div class="service-box">
+                  <i class="bi bi-lightbulb"></i>
+                  <h4>Service 2</h4>
+                  <p> You can make friends.</p>
+                  <button>Read More</button>
+              </div>
+          </div>
+          <div class="col-md-4">
+              <div class="service-box">
+                  <i class="bi bi-briefcase"></i>
+                  <h4>Service 3</h4>
+                  <p>Delivering professional and reliable services to help you excel in your industry.</p>
+                  <button>Read More</button>
+              </div>
+          </div>
+          <div class="col-md-4">
+              <div class="service-box">
+                  <i class="bi bi-people"></i>
+                  <h4>Service 4</h4>
+                  <p>Collaborative solutions to foster teamwork and drive collective success.</p>
+                  <button>Read More</button>
+              </div>
+          </div>
+          <div class="col-md-4">
+              <div class="service-box">
+                  <i class="bi bi-globe"></i>
+                  <h4>Service 5</h4>
+                  <p>Global expertise to expand your reach and connect with a worldwide audience.</p>
+                  <button>Read More</button>
+              </div>
+          </div>
+          <div class="col-md-4">
+              <div class="service-box">
+                  <i class="bi bi-chat-dots"></i>
+                  <h4>Service 6</h4>
+                  <p>Exceptional support and guidance to ensure your success every step of the way.</p>
+                  <button>Read More</button>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+
+<div class="contact-section">
+  <div class="container">
+      <h2>Contact Us</h2>
+      <p>Have questions? Feel free to reach out through our contact form or find us at the location below. We’re here to help!</p>
+      <div class="row align-items-center">
+          <div class="col-lg-6">
+              <form>
+                  <div class="mb-3">
+                      <label for="name" class="form-label">Your Name</label>
+                      <input type="text" class="form-control" id="name" placeholder="Enter your name">
+                  </div>
+                  <div class="mb-3">
+                      <label for="email" class="form-label">Your Email</label>
+                      <input type="email" class="form-control" id="email" placeholder="Enter your email">
+                  </div>
+                  <div class="mb-3">
+                      <label for="message" class="form-label">Message</label>
+                      <textarea class="form-control" id="message" rows="4" placeholder="Write your message"></textarea>
+                  </div>
+                  <button type="submit" class="btn btn-primary">Send Message</button>
+              </form>
+          </div>
+          <div class="col-lg-6">
+              <div class="map-container">
+                  <iframe 
+                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.8354345094154!2d-122.41941568468103!3d37.774929279759235!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80858064dfdfbf9b%3A0x2cb1cfada07ac3ec!2sSan+Francisco%2C+CA%2C+USA!5e0!3m2!1sen!2sin!4v1618314654505!5m2!1sen!2sin" 
+                      style="border:0;" 
+                      allowfullscreen="" 
+                      loading="lazy"></iframe>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+
+<div class="contact-section">
+  <div class="container">
+      <h2>Contact Us</h2>
+      <p>Have questions? Feel free to reach out through our contact form or find us at the location below. We’re here to help!</p>
+      <div class="row align-items-center">
+          <div class="col-lg-6">
+              <form>
+                  <div class="mb-3">
+                      <label for="name" class="form-label">Your Name</label>
+                      <input type="text" class="form-control" id="name" placeholder="Enter your name">
+                  </div>
+                  <div class="mb-3">
+                      <label for="email" class="form-label">Your Email</label>
+                      <input type="email" class="form-control" id="email" placeholder="Enter your email">
+                  </div>
+                  <div class="mb-3">
+                      <label for="message" class="form-label">Message</label>
+                      <textarea class="form-control" id="message" rows="4" placeholder="Write your message"></textarea>
+                  </div>
+                  <button type="submit" class="btn btn-primary">Send Message</button>
+              </form>
+          </div>
+          <div class="col-lg-6">
+              <div class="map-container">
+                  <iframe 
+                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.8354345094154!2d-122.41941568468103!3d37.774929279759235!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80858064dfdfbf9b%3A0x2cb1cfada07ac3ec!2sSan+Francisco%2C+CA%2C+USA!5e0!3m2!1sen!2sin!4v1618314654505!5m2!1sen!2sin" 
+                      style="border:0;" 
+                      allowfullscreen="" 
+                      loading="lazy"></iframe>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+
+<footer class="footer">
+  <div class="container">
+      <p>&copy; 2025 Minecraft Homies. All Rights Reserved.</p>
+      <p>
+          <a href="#">Privacy Policy</a> |
+          <a href="#">Terms of Service</a> |
+          <a href="#">Contact</a>
+      </p>
+  </div>
+</footer>
+
+ <script src="script.js"></script>
+  <!-- Link to Bootstrap JS and Popper.js (required for dropdown and responsive navbar) -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+</body>
+</html>
